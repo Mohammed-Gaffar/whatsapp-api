@@ -44,10 +44,13 @@
                             <td>{{$marketer->phone}}</td>
                             <td>{{$marketer->address}}</td>
                             <td>{{$marketer->customers_count}}</td>
-                            <td >
+                            <td> <a href="https://wa.me/?text=+http://localhost:8000/advertisement/{{$marketer->slug}}" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a> </a>
+ 
+                            {{-- <td >
                                 <a href ="{{ route('marketers.advertisement',$marketer->slug) }}" class="btn btn-primary">
                               <b>    <i class="fa fa-link" style=" color:white;"></i>  </b> </a> 
-                                  </td>
+                                  </td> --}}
                                       <td >
                                 <a href ="{{ route('marketers.edit',$marketer->id) }}" class="btn btn-info">
                               <b>    <i class="fa fa-edit" style=" color:white;"></i>  </b> </a> 

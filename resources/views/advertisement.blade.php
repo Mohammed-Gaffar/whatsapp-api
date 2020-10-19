@@ -29,7 +29,7 @@
 {{ session('error') }}
 </div>
 @endif
-
+{{-- <pre class="hd he hf hg hh if ig ih"><span id="5c7d" class="co ii ij eq ik b cl il im w in" data-selectable-paragraph=""><mark class="vq po kp">javascript:{window.location=’</mark><mark class="vq po kp"><a href="https://wa.me/?text='+encodeURIComponent(window.location.href)}" class="cr ie" rel="noopener nofollow">https://wa.me/?text='+encodeURIComponent(window.location.href)}</a></mark></span></pre> --}}
 <br>
 {{-- @if (!session('success') && !auth::check()) --}}
 @if (!session('success'))

@@ -16,7 +16,7 @@
 @php
  use App\user;
  use App\customer;
- $marketers=user::all()->count()-1; //this 1 is you :)
+ $marketers=user::all()->count()-1; //this one is you :)
  if(auth()->user()->rank == 1) {
  $customers=customer::all()->count();}
  else if(auth()->user()->rank == 2) {

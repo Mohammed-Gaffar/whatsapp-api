@@ -16,11 +16,11 @@ class CustomerController extends Controller
      */
     public function index()
     {
-       if(auth()->user()->rank == 1) {
+       if(auth()->user()->rank == 1) { //admin
            $customers=customer::latest()->paginate(10);
            return view('customers.index',compact('customers'));
        }
-       else if(auth()->user()->rank == 2) {
+       else if(auth()->user()->rank == 2) { //marketer
         $customers=customer::where('user_id','=',auth()->user()->id)->latest()->paginate(10);
         return view('customers.index',compact('customers')); 
             }
